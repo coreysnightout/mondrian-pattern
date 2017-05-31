@@ -1,0 +1,88 @@
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+.top-box {
+  width: 100%;
+  height: 250px;
+}
+
+.second-box {
+  margin-top: 15px;
+  width: 100%;
+  height: 100px;
+}
+
+.third-box {
+  margin-top: 15px;
+  width: 100%;
+  height: 100px;
+}
+
+
+@media screen and (max-width: 400px) {
+  .top-box {
+    background-color: blue;
+  }
+  .second-box {
+    background-color: green;
+  }
+  .third-box {
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 700px) {
+
+  .top-box {
+    height: 350px;
+    background-color: #000;
+  }
+  .second-box {
+    float: left;
+    width: 49%;
+    margin-right: 0%;
+    height: 350px;
+    background-color: brown;
+  }
+  .third-box {
+    float: right;
+    width: 49%;
+    margin-left: 0%;
+    height: 350px;
+    background-color: yellow;
+  }
+}
+@media screen and (min-width: 701px){
+  .top-box {
+    height: 500px;
+    width: 65%;
+    float: left;
+    background-color: violet;
+    margin-left:10px;
+  }
+  .second-box {
+    float: right;
+    width: 30%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 235px;
+    background-color: orange;
+    margin-top: 0;
+  }
+  .third-box {
+    float: right;
+    width: 30%;
+    margin-right: 20px;
+    margin-top: 10px;
+    height: 235px;
+    background-color: orange;
+    margin-bottom: 0;
+  }
+}
